@@ -291,10 +291,12 @@
         <br />
         <br />
         <div class="caja">
-            <label for="nom">Nombre</label> <input type="text" id="nom" placeholder="Escriba su nombre aqui" required>
+            <label for="nom">Nombre</label> <input type="text" id="nom" placeholder="Escriba su nombre aqui" required
+                maxlength="8" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" title="Solo se permiten letras y espacios">
             <label for="ape">Apellido</label> <input type="text" id="ape" placeholder="Escriba su apellido aqui"
-                required>
-            <label for="pais">Numero</label> <input type="text" id="pais" placeholder="Escriba numero aqui" required>
+                required maxlength="10" pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" title="Solo se permiten letras y espacios">
+            <label for="pais">Numero</label> <input type="text" id="pais" placeholder="Escriba numero aqui" required
+                maxlength="8">
         </div>
         <br />
         <input class="submit" type="submit" value="Escribir">
